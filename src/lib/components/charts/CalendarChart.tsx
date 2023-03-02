@@ -4,26 +4,18 @@ import {
   GridItem,
   MenuList,
   MenuDivider,
-  ButtonGroup,
-  Button,
   CircularProgress,
   Select,
 } from "@chakra-ui/react";
 import { ResponsiveCalendar } from "@nivo/calendar";
-
 import { useRef, useState } from "react";
 import moment from "moment";
-
 import { GRID_ITEM_SIZE } from "./template";
 import ChartSpanMenu from "../basic/ChartSpanMenu";
 import ChartHeader from "../basic/ChartHeader";
-import { AnimatePresence } from "framer-motion";
-import MotionBox from "../motion/Box";
 import LinkToSourceMenuItem from "../basic/LinkToSourceMenuItem";
 import { ModalInfo } from "../basic/ModalInfo";
 import ChartImageExportMenu from "../basic/ChartImageExportMenu";
-import { YearlyStockVolume } from "lib/requests/home";
-import millify from "millify";
 
 interface Props {
   modalInfo?: string;
@@ -87,7 +79,7 @@ const CalendarChart = ({
       }
     )
       .then((response) => response.json())
-      .then((data: YearlyStockVolume) => {
+      .then((data) => {
         setSelectedDate(year);
         setChartData(data.data);
       })

@@ -1,7 +1,7 @@
 export default {
-  APP_NAME: "FAANG Dash",
-  SITE_URL: "FAANGDash.vercel.app",
-  BLOCKCHAIN: "Osmosis",
+  APP_NAME: "BoxOffice Dash",
+  SITE_URL: "BoxOfficeDash.vercel.app",
+  BLOCKCHAIN: "",
   BLOCKCHAIN_HEADER_GRADIENT: "linear-gradient(90deg, #85FFBD 20%, #FFFB7D 100%)",
   BLOCKCHAIN_HEADER_GRADIENT_OVERLAY_DARK:
     "linear-gradient(90deg, #172852a0 0%, #17285232 100%)",
