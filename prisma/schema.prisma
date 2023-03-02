@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./goh.db"
+}
+
+model box_office {
+  id                  Int    @id @default(autoincrement())
+  rank                Int
+  year                Int
+  movie               String
+  worldwidebox_office Int
+  domesticbox_office  Int
+  international_box   Int
+}
