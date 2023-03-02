@@ -163,3 +163,28 @@ export const getYearlyInfo = async () => {
 
   return { first50Worldwide };
 };
+
+
+export const getTotalData = async () => {
+  const data = await prisma.box_office.findMany({
+    where: {
+      rank: {
+        lte: 500
+      }
+    }
+  })
+
+  const years = await prisma.box_office.findMany({
+    where: {
+      rank: {
+        lte: 500
+      }
+    },
+    select: {
+      year: true
+    },
+    distinct: 'year'
+  })
+
+  return { data, years: years.map(year => year.year) }
+}
