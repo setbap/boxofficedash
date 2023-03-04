@@ -7,5 +7,5 @@ export default {
     "linear-gradient(90deg, #172852a0 0%, #17285232 100%)",
   BLOCKCHAIN_HEADER_GRADIENT_OVERLAY_LIGHT:
     "linear-gradient(90deg, #772852a0 0%, #f7285222 100%)",
-  BLOCKCHAIN_HEADER_IMAGE_URL: "/logo.png",
+  BLOCKCHAIN_HEADER_IMAGE_URL: "/icon.png",
 };

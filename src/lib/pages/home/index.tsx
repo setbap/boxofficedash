@@ -24,65 +24,28 @@ const colors = [
 const Home = (): JSX.Element => {
   return (
     <>
-      <NextSeo title={`Faang Stock Data overview`} />
+      <NextSeo title={`Box Office`} />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
         <SimpleGrid
           my={"5"}
           columns={{ base: 1, md: 1, lg: 2, "2xl": 3 }}
           spacing={{ base: 3, lg: 4 }}
         >
-          <HeaderSection title={`FAANG`}>
-            {`
-FAANG is an acronym for the top five most successful technology stocks on the stock market, which include Facebook, Amazon, Apple, Netflix and Google. These companies have been some of the best performing stocks in recent years due to their innovative products and services that are highly sought after by consumers worldwide. For example, Facebook has a massive user base with over 2 billion active users while Amazon dominates online retailing with its wide selection of products and unbeatable prices. Apple’s iPhones remain popular despite stiff competition from other smartphone makers while Netflix continues to revolutionize television entertainment through its streaming platform. Finally Google remains at the forefront of search engine technology as well as cloud computing solutions for businesses around the world. All these companies offer investors attractive returns when investing in their respective shares on public exchanges like NASDAQ or NYSE.
-        `}
-          </HeaderSection>
-          <HeaderSection title={`Dataset`}>
-            {`
-We used Kaggle - a popular online website which gives users access to thousands of public datasets. One user Aayush Mishra had uploaded a dataset with all FAANG stock ticks with the features - Date, Open, Close, High, Low, Adj Close and Volume - in a dataset named FAANG- Complete Stock Data. The link for this dataset is provided below: 
-
-[Kaggle Faang Data](https://www.kaggle.com/aayushmishra1512/faang-complete-stock-data)
-
-The dataset is reliable and we used Yahoo Stocks to verify that the given data's ticks matched perfectly with the actual data recorded by Yahoo Stocks.
-        `}
-          </HeaderSection>
-          <HeaderSection title={`Insights`}>
+          <HeaderSection title={`Box Office`}>
             {`
 
-The general trend of all stocks' price features were increasing over time. This is in line with the reason FAANG stocks are popular. They are considered "Blue Chip" stocks since they're meant to be held for a long time due to their upward trend. The FAANG stocks are often grouped together since they relate to the larger technology companies in Silicon Valley based on their stock prices. We saw from our Close Prices plot that they have an increase over time which shows us why these stocks are "Blue Chip".
 `}
           </HeaderSection>
-          <HeaderSection title={`Links`} />
-        </SimpleGrid>
-        <SimpleGrid
-          position={"relative"}
-          transition={"all 0.9s ease-in-out"}
-          pb={"6"}
-          gap={4}
-          zIndex={100}
-          columns={{ sm: 2, md: 3, lg: 4, "2xl": 5 }}
-          spacing={{ base: 1, md: 2, lg: 4 }}
-        >
-          <CompanyLinkBox
-            path={"Facebook"}
-            Icon={BsFacebook}
-            hoverColor="#3b5998"
-          />
-          <CompanyLinkBox path={"Apple"} Icon={BsApple} hoverColor="#a2aaa2" />
-          <CompanyLinkBox
-            path={"Amazon"}
-            Icon={FaAmazon}
-            hoverColor="#ff9000"
-          />
-          <CompanyLinkBox
-            path={"Netflix"}
-            Icon={RiNetflixFill}
-            hoverColor="#e50914"
-          />
-          <CompanyLinkBox
-            path={"Google"}
-            Icon={FaGoogle}
-            hoverColor="#179c52"
-          />
+          <HeaderSection title={`DataSets`}>
+            {`
+
+1. The 'All Time Worldwide Box Office' dataset from Kaggle provides an extensive overview of the highest grossing films worldwide. This dataset contains information on over 4,000 movies released between 1920 and 2020, including their title, release year, production company/studio name and total box office revenue. All data is sourced from reliable sources such as IMDb and Box Office Mojo for accuracy. The data can be used for a variety of purposes such as analyzing trends in movie genres or predicting which movies will have the most success at the box office before they are released.
+
+  
+
+2. The Marvel Cinematic Universe Box Office Dataset from Kaggle is a comprehensive collection of data on the box office performance of all films released in the Marvel Cinematic Universe (MCU). This dataset includes information such as domestic and international gross, opening weekend numbers, release date, production budget and more. With this dataset you can analyze trends across MCU releases to gain insights into how different factors affect its success at the box office.
+`}
+          </HeaderSection>
         </SimpleGrid>
       </Box>
     </>

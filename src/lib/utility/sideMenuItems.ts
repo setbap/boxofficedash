@@ -6,4 +6,5 @@ export default [
     { name: "Top500", path: "/top500", icon: FaChartLine },
     { name: "Years", path: "/years", icon: FaChartLine },
     { name: "Year", path: "/year", icon: FaChartLine },
+    { name: "MCU", path: "/mcu", icon: FaChartLine },
 ];

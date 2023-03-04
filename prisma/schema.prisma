@@ -7,6 +7,19 @@ datasource db {
   url      = "file:./goh.db"
 }
 
+model mcu {
+  movie_title          String           @id
+  mcu_phase            Int
+  release_date         String
+  tomato_meter         Int
+  audience_score       Int
+  movie_duration       Int
+  production_budget    Int
+  opening_weekend      Int
+  domestic_box_office  Int
+  worldwide_box_office Unsupported("")?
+}
+
 model box_office {
   id                  Int    @id @default(autoincrement())
   rank                Int

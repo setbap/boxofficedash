@@ -130,7 +130,7 @@ const DesktopTopNav = () => {
             filter: "grayscale(0.2)",
             zIndex: "1",
           }}
-          width={132}
+          width={32}
           height={32}
           src={names.BLOCKCHAIN_HEADER_IMAGE_URL}
         />
