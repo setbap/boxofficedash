@@ -13,7 +13,7 @@ import { NextSeo } from "next-seo";
 import HeaderSection from "lib/components/basic/HeaderSection";
 import StackedAreaChart from "lib/components/charts/StackedAreaGraph";
 import BarGraph from "lib/components/charts/BarGraph";
-import { YearType } from "pages/year";
+import { YearType } from "pages/year-by-year";
 import CandleChart from "lib/components/charts/CandleChart";
 import CalendarChart from "lib/components/charts/CalendarChart";
 import LineChartWithBar from "lib/components/charts/LineChartWithBar";

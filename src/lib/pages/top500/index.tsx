@@ -3,7 +3,7 @@ import { StatsCard } from "lib/components/charts/StateCard";
 import { NextSeo } from "next-seo";
 import HeaderSection from "lib/components/basic/HeaderSection";
 import BarGraph from "lib/components/charts/BarGraph";
-import { Top500Type } from "pages/top500";
+import { Top500Type } from "pages/revenue";
 import TableBox from "lib/components/charts/TableBox";
 import { box_office } from "@prisma/client";
 import { ColumnDef } from "@tanstack/react-table";

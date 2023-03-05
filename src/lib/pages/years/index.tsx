@@ -4,7 +4,7 @@ import { NextSeo } from "next-seo";
 import HeaderSection from "lib/components/basic/HeaderSection";
 import StackedAreaChart from "lib/components/charts/StackedAreaGraph";
 import BarGraph from "lib/components/charts/BarGraph";
-import { YearsType } from "pages/years";
+import { YearsType } from "pages/alltimes";
 import CandleChart from "lib/components/charts/CandleChart";
 import CalendarChart from "lib/components/charts/CalendarChart";
 import LineChartWithBar from "lib/components/charts/LineChartWithBar";
