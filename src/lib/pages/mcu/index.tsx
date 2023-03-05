@@ -31,7 +31,11 @@ const Top500 = ({
     <>
       <NextSeo title={`MCU Data`} />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title={`MCU Box Office`} />
+        <HeaderSection title={`MCU Box Office`}>
+          {`
+The Marvel Cinematic Universe (MCU) is a massive media franchise that includes a series of superhero films produced by Marvel Studios and based on characters from Marvel Comics. The franchise began with the 2008 release of Iron Man and has since grown to include several sequels and spin-offs, as well as a range of television shows, video games and other media. The MCU is one of the highest grossing film franchises of all time, and its characters and stories have become an integral part of popular culture. The MCU is known for its strong continuity between films and its focus on character development, as well as its signature blend of action, comedy, and adventure.
+          `}
+        </HeaderSection>
 
         <SimpleGrid
           my={"6"}
