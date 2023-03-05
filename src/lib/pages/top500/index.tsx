@@ -27,9 +27,13 @@ const colors = [
 const Top500 = ({ data: { top500 } }: Top500Type): JSX.Element => {
   return (
     <>
-      <NextSeo title={`Top 500 Box Office`} />
+      <NextSeo title={`Revenue`} />
       <Box mx={"auto"} pt="4" px={{ base: 3, sm: 2, md: 8 }}>
-        <HeaderSection title={`Top 500 Box Office`} />
+        <HeaderSection title={`Revenue`}>
+          {`
+This section contains revenue information of the top 500 movies in terms of worldwide sales.
+          `}
+        </HeaderSection>
 
         <SimpleGrid
           my={"6"}
@@ -149,11 +153,11 @@ const Top500 = ({ data: { top500 } }: Top500Type): JSX.Element => {
           columns={{ sm: 1, md: 1, lg: 2, "2xl": 3 }}
           spacing={{ base: 1, md: 2, lg: 4 }}
         >
-          <HeaderSection title="Top 500 Movie in Box Office">{``}</HeaderSection>
+          <HeaderSection title="Revenue of Top 500 Movies">{``}</HeaderSection>
 
           <TableBox
             customHeaderColor={colors[2]}
-            title={"Top 500 Box Office movie "}
+            title={"Revenue of Top 500 Movies"}
             baseSpan={3}
             tablePageSize={10}
             modalInfo={``}

@@ -43,12 +43,12 @@ const Company = ({ data: { yearInfo } }: YearsType): JSX.Element => {
           />
           <StatsCard
             stat={"2018"}
-            title={`Year with highest movie in top 500`}
+            title={`Year with highest number of movie `}
             status="inc"
           />
           <StatsCard
             stat={"38"}
-            title={`count movie in top 500 2018`}
+            title={`The number of movies in the year with most movies`}
             status="inc"
           />
         </SimpleGrid>
@@ -62,16 +62,16 @@ const Company = ({ data: { yearInfo } }: YearsType): JSX.Element => {
           columns={{ sm: 1, md: 1, lg: 2, "2xl": 3 }}
           spacing={{ base: 1, md: 2, lg: 4 }}
         >
-          <HeaderSection title="Total Volume each month">
+          <HeaderSection title="Total Revenue per year">
             {`
-In this section, you can see the total volume of a stock every month.
+In this section, you can see the total Revenue movies in a year
             `}
           </HeaderSection>
           <LineChartWithBar
             isNotDate
             hideLine
             data={yearInfo.first50Worldwide}
-            title={`Number of moive and total sale  box office from 500 in each year`}
+            title={`Number of movie and total sale  box office from 500 in each year`}
             showSeprate
             baseSpan={3}
             xAxisDataKey={"year"}

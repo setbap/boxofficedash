@@ -45,7 +45,7 @@ export default function Footer() {
           <Text style={{ marginInlineStart: "0.3em" }}>&</Text>
           <Link
             style={{ marginInlineStart: "0.25em" }}
-            href={"http://github.com/setbap/faangdash"}
+            href={"http://github.com/setbap/boxofficedash"}
             isExternal
             display={"inline-flex"}
           >
