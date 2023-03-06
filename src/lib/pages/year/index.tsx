@@ -150,9 +150,9 @@ const Company = ({ data: { totalData, years } }: YearType): JSX.Element => {
           columns={{ sm: 1, md: 1, lg: 2, "2xl": 3 }}
           spacing={{ base: 1, md: 2, lg: 4 }}
         >
-          <HeaderSection title="Total Volume each month">
+          <HeaderSection title="Revenue of each movie">
             {`
-In this section, you can see the total volume of a stock every month.
+In this section, you can see the revenue of each movie.
             `}
           </HeaderSection>
 
